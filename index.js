@@ -1,7 +1,9 @@
 const express=require("express");
 const app=express();
-
+const productRouter = require('./Routes/ProductRoutes')
 const mongoose=require('mongoose');
+app.use("",productRouter)
+app.use(express.json());
 
 mongoose.connect('mongodb+srv://vijayanurajan:vijay2004@mycluster1651.ls3c7.mongodb.net/?retryWrites=true&w=majority&appName=MyCluster1651')
     .then(()=>{
@@ -12,7 +14,7 @@ mongoose.connect('mongodb+srv://vijayanurajan:vijay2004@mycluster1651.ls3c7.mong
     })
 
 
-app.listen("9000",()=>{
+app.listen(9000,()=>{
     console.log("server is running on port 9000");
 })
 
