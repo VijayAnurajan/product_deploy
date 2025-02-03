@@ -3,7 +3,7 @@ const app=express();
 
 const mongoose=require('mongoose');
 
-mongoose.connect('mongodb+srv://vijayanurajan:vijay1651@mycluster1651.ls3c7.mongodb.net/?retryWrites=true&w=majority&appName=MyCluster1651')
+mongoose.connect('mongodb+srv://vijayanurajan:vijay2004@mycluster1651.ls3c7.mongodb.net/?retryWrites=true&w=majority&appName=MyCluster1651')
     .then(()=>{
         console.log("Connected to MongoDB");
     })
