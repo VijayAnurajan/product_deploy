@@ -17,8 +17,7 @@ app.listen("9000",()=>{
 })
 
 app.get('/',(req,res)=>{
-    // res.send("Hello World");
-    // res.json(person)
+    res.send("Hello World");
 })
 
 // const person={
